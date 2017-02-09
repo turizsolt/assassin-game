@@ -6,9 +6,13 @@ var assassins = deepArrayCopy(playerNames);
 
 var count = assassins.length;
 
-var targets = [null, null, null, null, null, null, null];
+var targets = [];
+var pool = [];
 
-var pool = [0, 1, 2, 3, 4, 5, 6];
+for(var i=0;i<count;i++) {
+    targets.push(null);
+    pool.push(i);
+}
 
 shuffle(pool);
 
