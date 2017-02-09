@@ -2,17 +2,8 @@
  * Created by zsiri on 2016.08.25..
  */
 
-//for(var k=0;k<10000;k++){
+var assassins = deepArrayCopy(playerNames);
 
-var assassins = [
-    'Adam',
-    'Bob',
-    'Charles',
-    'Dean',
-    'Elisa',
-    'Frederic',
-    'George'
-];
 var count = assassins.length;
 
 var targets = [null, null, null, null, null, null, null];
@@ -24,14 +15,6 @@ shuffle(pool);
 for(var i=0;i<count;i++){
     targets[i] = assassins[pool[(pool.indexOf(i)+1)%count]];
 }
-
-// checking
-
-/*
-console.log(pool);
-console.log(assassins);
-console.log(targets);
-*/
 
 // init
 
@@ -71,15 +54,7 @@ function shuffle(a) {
     }
 }
 
-var names = [
-    'Adam',
-    'Bob',
-    'Charles',
-    'Dean',
-    'Elisa',
-    'Frederic',
-    'George'
-];
+var names = deepArrayCopy(playerNames);
 
 function testOneCircle(){
     var ass = assassins[0];
@@ -98,9 +73,10 @@ function testOneCircle(){
     return true;
 }
 
-//console.log(
-//if(!testOneCircle()) throw "Test condition not met.";
-//);
-
-//}
-//console.log("Test successed.");
+function deepArrayCopy(old){
+    var newone = [];
+    for(var i=0;i<old.length;i++){
+        newone.push(old[i]);
+    }
+    return newone;
+}
