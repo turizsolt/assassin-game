@@ -12,3 +12,9 @@ When this happens, the target is "dead", and eliminated from the game.
 The assassin inherits the the target's target - so the circle will narrow and narrow until there are only two player left.
 Now they are against each other, but they do not know how many of the still alive.
 You win, when you inherit your own name from your target.
+
+# Usage
+
+1. First open config.js and update the names accordingly.
+2. Open the hungarian.html or the english.html file in a browser respecting your language preferences.
+3. Follow the instractions inside.
