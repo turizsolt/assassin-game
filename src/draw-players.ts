@@ -1,7 +1,3 @@
-/**
- * Created by zsiri on 2016.08.25..
- */
-
 // TODO break it into two parts, the chain making process,
 // TODO and assigning names to it
 
