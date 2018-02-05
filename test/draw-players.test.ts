@@ -1,4 +1,8 @@
-/*function testOneCircle(names, targets){
+const names = ['Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo', 'Foxtrot'];
+var {targets, assassins} = getTargetsAndAssasins(names);
+console.assert(testOneCircle(names, targets, assassins), "failed");
+
+function testOneCircle(names, targets, assasins){
     var count = names.length;
     var ass = assassins[0];
 
@@ -15,4 +19,3 @@
 
     return true;
 }
-*/
